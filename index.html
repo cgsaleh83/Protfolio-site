@@ -1,364 +1,59 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Nature</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="nature.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-
-    <!------Header------>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">Abu Labib</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-lg-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#expoler">Gallary</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#adventure">Adventure</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#blog">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!------Home------>
-    <div class="jumbotron jumbotron-fluid height100p banner" id="home">
-        <div class="container h100">
-            <div class="contentbox h100">
-                <div>
-                    <h1>Undiscover Beauty</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make </p>
-                </div>
-            </div>
+<body>
+    <div id="clock">
+        <h2>This Time IS Sajjat Time</h2>
+        <div id="time">
+            <div><span id="hour">00</span><span>Hours</span></div>
+            <div><span id="minutes">0 0</span><span>Minutes</span></div>
+            <div><span id="seconds">00</span><span>Secound</span></div>
+            <div><span id="ampm">AM</span></div>
         </div>
     </div>
-    <!------Expoler------>
-    <section class="sec1" id="expoler">
-        <div class="container">
-            <div class="row">
-                <div class="offset-sm-2 col-sm-8">
-                    <div class="headerText text-center">
-                        <h2>Nature In The World</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it to make </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="placebox">
-                        <div class="imgbox">
-                            <img src="img/ntr3.jpg" class="img-fluid">
-                        </div>
-                        <div class="content">
-                            <h3>Place Name<br /><span>Country Name</span></h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="placebox">
-                        <div class="imgbox">
-                            <img src="img/ntr4.jpg" class="img-fluid">
-                        </div>
-                        <div class="content">
-                            <h3>Place Name<br /><span>Country Name</span></h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="placebox">
-                        <div class="imgbox">
-                            <img src="img/ntr5.jpg" class="img-fluid">
-                        </div>
-                        <div class="content">
-                            <h3>Place Name<br /><span>Country Name</span></h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="placebox">
-                        <div class="imgbox">
-                            <img src="img/ntr5.jpg" class="img-fluid">
-                        </div>
-                        <div class="content">
-                            <h3>Place Name<br /><span>Country Name</span></h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="placebox">
-                        <div class="imgbox">
-                            <img src="img/ntr5.jpg" class="img-fluid">
-                        </div>
-                        <div class="content">
-                            <h3>Place Name<br /><span>Country Name</span></h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="placebox">
-                        <div class="imgbox">
-                            <img src="img/ntr4.jpg" class="img-fluid">
-                        </div>
-                        <div class="content">
-                            <h3>Place Name<br /><span>Country Name</span></h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="placebox">
-                        <div class="imgbox">
-                            <img src="img/ntr3.jpg" class="img-fluid">
-                        </div>
-                        <div class="content">
-                            <h3>Place Name<br /><span>Country Name</span></h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="placebox">
-                        <div class="imgbox">
-                            <img src="img/ntr1.jpg" class="img-fluid">
-                        </div>
-                        <div class="content">
-                            <h3>Place Name<br /><span>Country Name</span></h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="placebox">
-                        <div class="imgbox">
-                            <img src="img/ntr2.jpg" class="img-fluid">
-                        </div>
-                        <div class="content">
-                            <h3>Place Name<br /><span>Country Name</span></h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!------Adventure------>
-    <section class="sec2" id="adventure">
-        <div class="container h100">
-            <div class="contentbox h100">
-                <div>
-                    <h2>Adventure is Everywhere</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make </p>
-                    <a href="#" class="btn btnD1">Read More</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!------Blog------>
-    <section class="blog" id="blog">
-        <div class="container">
-            <div class="row">
-                <div class="offset-sm-2 col-sm-8">
-                    <div class="headerText text-center">
-                        <h2>Our Latest Post</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it to make </p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="blogpost">
-                        <div class="imgbox">
-                            <img src="img/ntr3.jpg" class="img-fluid">
-                        </div>
-                        <div class="content">
-                            <h1>Lorem Ipsum is simply dummy text of the printing </h1>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an.. </p>
-                            <a href="#" class="btn btnD2">Read More</a>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-sm-6">
-                    <div class="blogpost">
-                        <div class="imgbox">
-                            <img src="img/ntr4.jpg" class="img-fluid">
-                        </div>
-                        <div class="content">
-                            <h1>Lorem Ipsum is simply dummy text of the printing </h1>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an.. </p>
-                            <a href="#" class="btn btnD2">Read More</a>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-sm-6">
-                    <div class="blogpost">
-                        <div class="imgbox">
-                            <img src="img/ntr2.jpg" class="img-fluid">
-                        </div>
-                        <div class="content">
-                            <h1>Lorem Ipsum is simply dummy text of the printing </h1>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an.. </p>
-                            <a href="#" class="btn btnD2">Read More</a>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-sm-6">
-                    <div class="blogpost">
-                        <div class="imgbox">
-                            <img src="img/ntr1.jpg" class="img-fluid">
-                        </div>
-                        <div class="content">
-                            <h1>Lorem Ipsum is simply dummy text of the printing </h1>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an.. </p>
-                            <a href="#" class="btn btnD2">Read More</a>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!------Contact------>
-
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="headerText text-center">
-                        <h2>Contact Us</h2>
-                        <p>Ipsum has been the industry's standard dummy text ever since the 1500s, when an</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row clearfix">
-                <div class="offset-sm-2 col-sm-8">
-                    <form>
-                        <div class="form-group">
-                            <label>Name</label>
-                            <input type="text" name="name" class="form-control">
-                        </div>
-
-                        <div class="form-group">
-                            <label>Email</label>
-                            <input type="email" name="email" class="form-control">
-                        </div>
-
-                        <div class="form-group">
-                            <label>Password</label>
-                            <input type="password" name="password" class="form-control">
-                        </div>
-
-                        <div class="form-group">
-                            <label>Message</label><br />
-                            <textarea class="form-control textarea" name="" row="20" cols="86"></textarea>
-                        </div>
-                        <div class="form-group text-center">
-                            <button class="btn btnD1" style="color:black;">
-                                <a
-                                    href="https://mail.google.com/mail/u/0/?ogbl#inbox/FMfcgxwHNMRXPMjGxvWKjNBwdscVVFlf">Send</a>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!------Footer------>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <ul class="sci">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-youtube-play"></i></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></li>
-                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                    </ul>
-                    <p class="cpryt">Made With<i class="fa fa-heart-o animated infinite heartBeat"></i> By <a
-                            href="http://www.itgardenltd.com/" target="_blank">It-Garden</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!------Javascript------>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-
     <script type="text/javascript">
-        $(document).scroll(function () {
-            $('.navbar').toggleClass('scrolled', $(this).scrollTop() > $('.navbar').height());
-        });
+        function clock() {
+
+            var hours = document.getElementById('hour');
+            var minutes = document.getElementById('minutes');
+            var seconds = document.getElementById('seconds');
+            var ampm = document.getElementById('ampm');
+
+
+
+            var h = new Date().getHours();
+            var m = new Date().getMinutes();
+            var s = new Date().getSeconds();
+            var am = new Date().getSeconds();
+            var am = "AM";
+
+            if (h > 12) {
+                h = h - 12;
+                var am = "PM"
+            }
+
+            h = (h < 10) ? "0" + h : h
+            m = (m < 10) ? "0" + m : m
+            s = (s < 10) ? "0" + s : s
+
+            hours.innerHTML = h;
+            minutes.innerHTML = m;
+            seconds.innerHTML = s;
+            ampm.innerHTML = am;
+
+        }
+
+        var interval = setInterval(clock, 1000);
+
     </script>
 
+    
 </body>
-
 </html>
