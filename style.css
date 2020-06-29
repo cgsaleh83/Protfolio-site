@@ -1,340 +1,73 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
-
 *{
-	outline: none!important;
-	scroll-behavior: smooth;
-}
-body{
-	font-family: 'Poppins', sans-serif;
-}
-header{
-	position: relative;
-	z-index: 1000000;
-}
-p{
-	font-size: 1.15rem
-}
-
-/*----navbar------*/
-.navbar{
-	transition: 0.5s;
-	background: transparent !important;
-}
-
-
-.navbar.scrolled{
-	background: #000!important;
-	transition: 0.5s;
-}
-
-.nav-item a:hover{
-	color: #fff!important;
-}
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: #purple;
-    background: #fff;
-}
-
-.navbar-light .navbar-nav .active>.nav-link:hover{
-	color: #fff;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: rgba(255,255,255,.8);
-}
-
-.navbar-light .navbar-nav .nav-link :hover,
-.navbar-light .navbar-nav .nav-link :focus{
-	color: rgba(255,255,255,.1);
-}
-
-.navbar-light .navbar-brand ,
-.navbar-light .navbar-brand :hover,
-.navbar-light .navbar-brand:focus,
-.navbar-light .navbar-brand :visited
-{
-    color: rgba(255,255,255,.1);
-    font-size: 2.5rem;
-    font-weight: 600;
-}
-
-.banner{
-	position: relative;
-	top: 0;
-	width: 100%;
-	height: 100vh;
-	background: url('img/farrel-nobel-BhLFK8lHvUs-unsplash.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	margin-bottom: 0;
-
-}
-
-.banner::before,
-.sec2::before,
-.contant::before
-{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 400px;
-	background: linear-gradient(#000,transparent);
-	pointer-events: none;
-}
-
-.banner::after,
-.sec2::after,
-.contant::after
-{
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 400px;
-	background: linear-gradient(360deg,#000,transparent);
-	pointer-events: none;
-}
-
-.height100p{
-	height: 100vh;
-}
-
-.h100{
-	height: 100%
-}
-
-.contentbox{
-	position: relative;
-	display: flex;
-	align-items: center;
-	text-align: center;
-	z-index: 10;
-	
-}
-.contentbox h1{
-	font-weight: 800;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 5rem;
-
-}
-
-.contentbox p{
-	color: #fff;
-	font-size: 1.3rem;
-}
-
-.sec1{
-	padding: 100px 0;
-	background: #000;
-}
-
-.headerText{
-	color: #fff;
-}
-.headerText h2{
-	font-size: 2.5rem;
-	margin-bottom: 20px;
-}
-
-.placebox{
-	position: relative;
-	max-width: 300px;
-	height: 400px;
-	margin: 0 auto;
-	margin-top: 30px;
-}
-
-.placebox .imgbox{
-	width: 100%;
-	height: 100%;
-}
-
-.placebox .imgbox img{
-	object-fit: cover;
-	width: 100%;
-	height: 100%;
-
-}
-
-.placebox .content{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: baseline;
-	align-items: flex-end;
-}
-
-.placebox .content h3{
-	position: relative;
-	margin: 0;
-	padding: 10px;
-	background: rgba(0, 0, 0, .95);
-	font-size: 20px;
-	font-weight: 600;
-	width: 100%;
-	text-align: center;
-}
-
-.placebox .content h3 span{
-	 font-size: 16px;
-	 font-weight: 500;
-}
-
-.sec2{
-	position: relative;
-	background: url('img/Slider2.jpg');
-	background-size: cover;
-	height: 100vh;
-}
-
-.sec2 h2{
-	font-weight: 800;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 4.5rem; 
-}
-
-.btnD1{
-	border: 2px solid #fff;
-	color: #fff;
-	border-radius: 50px;
-	padding: 15px 50px;
-	outline: none;
-	font-weight: 500;
-	margin-top: 20px;
-	transition: 0.5s;
-}
-.btnD1:hover{
-	background: #213265;
-	color: #fff;
-}
-
-.blog{
-	position: relative;
-	padding: 100px 0;
-	background: #000;
-}
-
-.blogpost{
-	position: relative;
-	width: 100%;
-	margin-top: 30px;
-	background: #fff;
-}
-
-.blogpost .imgbox{
-	height: 400px;
-}
-
-.blogpost .imgbox img{
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-.blogpost .content{
-	padding: 15px;
-}
-
-.blogpost .content h1{
-	margin: 0; 
-	padding: 0 0 15px;
-	font-weight: 600;
-	font-size: 1.5rem;
-}
-
-.btnD2{
-	background: #262626;
-	color: #fff;
-	border-radius: 30px;
-	padding: 10px 20px;
-	float: right;
-}
-
-.contact{
-	position: relative;
-	padding: 100px 0;
-	background: url('img/ntr3.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	min-height: 100vh;
-}
-
-.contact form{
-	position: relative;
-	z-index: 1000;
-}
-
-.contact .form-control{
-	background: transparent;
-	border: none;
-	border-bottom: 2px solid rgba(255, 255, 255, .2);
-	height: 50px;
-	border-radius: 0;
-	background: rgba(0, 0, 0, .6);
-	color: #fff;
-	font-size: 1.25rem;
-}
-.contact .form-control:focus,
-.contact .form-control:hover{
-	border: none;
-	border-bottom: 2px solid #fff;
-	box-shadow: none;
-}
-
-.contact .textarea{
-	 min-height: 100px;
-}
-
-.contact label{
-	color:#fff;
-	font-size: 1.25rem;
-}
-
-footer{
-	background: #000;
-	padding: 50px 0 0;
-}
-
-.sci{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background-color: #060a1f;
+}
+
+#clock h2{
+	position: relative;
+	display: block;
+	text-align: center;
+	margin: 10px 0px;
+	text-transform: uppercase;
+	letter-spacing: 0.4em;
+	font-size: 0.8em;	
+	color:#fff;
+}
+
+#clock #time{
+	display: flex;
+}
+
+#clock #time div{
+	position: relative;
+	margin:0 5px;
+	-webkit-box-reflect: below 1px linear-gradient(transparent,#0004)
+}
+
+#clock #time div span{
+	position: relative;
+	width: 100px;
+	height: 80px;
+	background-color: #2196f3;
+	color:#fff;
+	font-weight: 300;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-size: 3em;
+	z-index: 10;
+	box-shadow: 0 0 0 1px rgba(0,0,0,.2);
+}
+#clock #time div span:nth-child(2){
+	height: 30px;
+	font-size: 0.7em;
+	letter-spacing: 0.2;
+	font-weight: 500;
+	z-index: 9;
+	box-shadow: none;
+	background-color: #127fd6;
+	text-transform: uppercase;
 }
 
-.sci li{
-	list-style: none;
-	margin: 0 20px;
+#clock #time div:nth-last-child(2) span{
+	background-color: #ff006a;
 }
-
-.sci li a{
-	color: #777;
-	font-size: 2em;
-	transition: 0.5s;
+#clock #time div:nth-last-child(2) span:nth-child(2){
+	background-color: #ec0062;
 }
-
-.sci li a:hover{
-	color: #fff;
-	transform: scale(1.2)
-}
-
-.cpryt{
-	margin-top: 20px;
-	text-align: center;
-	color: #777;
-}
-
-.fa-heart-o{
-	color: red;
+#clock #time div:nth-last-child(1) span{
+	position: absolute;
+	bottom: 0;
+	width: 60px;
+	height: 40px;
+	font-size: 1.5em;
+	-webkit-box-reflect: below 1px linear-gradient(transparent,#0004)
 }
